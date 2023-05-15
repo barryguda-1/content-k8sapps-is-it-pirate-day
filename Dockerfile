@@ -10,7 +10,7 @@ WORKDIR /usr/src/app
 COPY --from=build /usr/src/app/build build/
 COPY --from=build /usr/src/app/.env ./
 RUN yarn global add @beam-australia/react-env
-
+RUN yarn global add serve
 
 
 
